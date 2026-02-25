@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login / Signup</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="188530-883127083.mp4" type="video/mp4">
+  </video>
+
+  <!-- FLIP WRAP -->
+  <section class="card-wrap">
+    <div class="card" id="authCard">
+
+      <!-- FRONT (LOGIN) -->
+      <div class="face front">
+        <h1>Welcome Back</h1>
+        <h3>Please enter your details</h3>
+
+        <div class="wrapper">
+          <form action="#">
+            <div class="input-field">
+              <input type="text" required>
+              <label>Email</label>
+            </div>
+
+            <div class="input-field password-field">
+              <input type="password" id="loginPassword" required>
+              <label>Password</label>
+              <span class="toggle-password" data-toggle="#loginPassword">
+                <i class="fa-solid fa-eye"></i>
+              </span>
+            </div>
+
+            <div class="forget">
+              <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit">Login</button>
+
+            <div class="register">
+              <p>Don't have an account?
+                <a href="#" class="go-signup">Sign up</a>
+              </p>
+            </div>
+
+            <div class="social-login">
+              <p>Continue with</p>
+              <div class="social-icons">
+                <a href="#" class="google"><i class="fab fa-google"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- BACK (SIGNUP) -->
+      <div class="face back">
+        <h1>Create Account</h1>
+        <h3>Fill the details to continue</h3>
+
+        <div class="wrapper">
+          <form action="#">
+            <div class="input-field">
+              <input type="text" required>
+              <label>Full Name</label>
+            </div>
+
+            <div class="input-field">
+              <input type="text" required>
+              <label>Email</label>
+            </div>
+
+            <div class="input-field password-field">
+              <input type="password" id="signupPassword" required>
+              <label>Password</label>
+              <span class="toggle-password" data-toggle="#signupPassword">
+                <i class="fa-solid fa-eye"></i>
+              </span>
+            </div>
+
+            <button type="submit">Sign Up</button>
+
+            <div class="register">
+              <p>Already have an account?
+                <a href="#" class="go-login">Login</a>
+              </p>
+            </div>
+
+            <div class="social-login">
+              <p>Continue with</p>
+              <div class="social-icons">
+                <a href="#" class="google"><i class="fab fa-google"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
